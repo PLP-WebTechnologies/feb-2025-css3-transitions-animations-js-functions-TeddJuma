@@ -1,0 +1,119 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f6f8;
+    transition: background-color 0.5s ease;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .preferences {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .color-options {
+    margin-top: 15px;
+  }
+  
+  .color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .color-btn:hover {
+    border-color: #555;
+  }
+  
+  /* Highlight selected color */
+  .color-btn.selected {
+    border-color: #222;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Animation Section */
+  .animation-section {
+    text-align: center;
+  }
+  
+  #animImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Button with smooth pulse animation */
+  .pulse-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pulse-btn:hover {
+    animation: pulse 1.5s infinite;
+    background-color: #2980b9;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(52,152,219, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(52,152,219, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(52,152,219, 0);
+    }
+  }
+  
+  /* Rotation animation triggered by JS */
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate360 1s ease-in-out forwards;
+  }
+  
+.img {
+display: block;
+margin: 0 auto;
+width: 100%;
+height: auto;
+border-radius: 12px;
+transition: transform 0.5s ease;
+}
+  

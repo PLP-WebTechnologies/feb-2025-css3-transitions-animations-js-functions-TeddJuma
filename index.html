@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animated Preferences</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Animated Preferences Demo</h1>
+  </header>
+
+  <main>
+    <section class="preferences">
+      <h2>Choose Your Theme Color</h2>
+      <div class="color-options">
+        <button class="color-btn" data-color="#3498db" style="background:#3498db;"></button>
+        <button class="color-btn" data-color="#e67e22" style="background:#e67e22;"></button>
+        <button class="color-btn" data-color="#2ecc71" style="background:#2ecc71;"></button>
+        <button class="color-btn" data-color="#9b59b6" style="background:#9b59b6;"></button>
+      </div>
+    </section>
+
+    <section class="animation-section">
+      <h2>Animate the Image</h2>
+      <p>
+      <img src="https://picsum.photos/200" alt="Random" id="animImage" />
+      </p>
+      <button id="animateBtn" class="pulse-btn">Rotate Image</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
